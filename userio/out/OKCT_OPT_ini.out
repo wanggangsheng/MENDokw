@@ -1,0 +1,76 @@
+          SHUFFLED COMPLEX EVOLUTION GLOBAL OPTIMIZATION
+          ==============================================
+
+ MODEL CALIBRATION VARIABLES & DATA-FILE (see MEND_namelist.nml):
+VARid     VAR       Units     Calibrate tstep     obs_file            obs_file_column     OBJ       OBJ_Weight
+------------------------------------------------------------------------------------------------------------------------
+    1     CO2       mgC-cm3-h     1         1     HR.obs                  2                NSEC       10.
+    3     MBC       mgC-cm3       1         5     MBC.obs                 2                MARt        2.
+   17     ENZC_LIG  mgC-cm3       1         2     ENZC_LIG.obs            2                CORR        2.
+   18     ENZC_CEL  mgC-cm3       1         2     ENZC_CEL.obs            2                CORR        2.
+
+
+ **WARNING** THE NUMBER OF SHUFFLING LOOPS IN WHICH THE CRITERION VALUE MUST CHANGE 
+             SHOULD BE GREATER THAN 0 AND LESS THAN 10.  kstop = ** WAS SPECIFIED.
+             BUT kstop = 5 WILL BE USED INSTEAD.
+
+
+  SCE CONTROL     MAX TRIALS     REQUIRED IMPROVEMENT     RANDOM
+   PARAMETER        ALLOWED      PERCENT    NO. LOOPS      SEED
+  -----------     ----------     -------    ---------     ------
+    DEFAULT            30       ******          5             0
+
+
+                  SCE ALGORITHM CONTROL PARAMETERS
+                  ================================
+
+  NUMBER OF     POINTS PER     POINTS IN      POINTS PER    EVOL. STEPS
+  COMPLEXES      COMPLEX      INI. POPUL.     SUB-COMPLX    PER COMPLEX
+  ---------     ----------    -----------     ----------    -----------
+      2             23             46             12             23
+
+
+               COMPLX NO.     MIN COMPLEX     INI. POINT
+               REDUCTION      NO. ALLOWED      INCLUDED
+               ----------     -----------     ----------
+                  NO               2             NO  
+
+
+        INITIAL PARAMETER VALUES AND PARAMETER BOUNDS
+        =============================================
+
+  PARAMETER      OPT-Y/N  INITIAL VALUE     LOWER BOUND     UPPER BOUND
+-----------   ----------  -------------     -----------     -----------
+       LF0             0       0.900000        0.100000        1.000000
+        r0             0       0.010000        0.010000        1.000000
+      fINP             0       0.400000        0.100000        1.000000
+        VP             0      75.000000       10.000000      100.000000
+      PAR1             0       2.000000        0.100000       50.000000
+       KP1             0     100.000000       10.000000      100.000000
+       fKM             0       6.000000        1.000000       40.000000
+      PAR3             0     492.000000      100.000000     1000.000000
+      Qmax             0       2.500000        0.100000        3.000000
+       Kba             0       6.000000        1.000000       16.000000
+      Kdes             0       0.006000        0.000100        0.010000
+        rE             1       0.000100        0.000100        0.010000
+       pEP             1       0.010437        0.001000        0.100000
+      fpEM             1       1.044990        0.100000        3.000000
+        fD             1       0.899211        0.100000        0.900000
+        gD             1       0.518324        0.100000        1.000000
+        Vg             1       0.018141        0.001000        0.100000
+     alpha             1       0.010007        0.010000        0.500000
+        KD             1       0.000100        0.000100        0.500000
+        Yg             1       0.397992        0.100000        0.600000
+      Ygsl             1       0.001360        0.001000        0.016000
+       Q10             1       1.700045        1.700000        2.500000
+     gamma             0       0.100000        0.010000       20.000000
+      beta             0       0.001000        0.000500        0.010000
+     WPA2D             0       0.400000        0.010000        0.600000
+       tau             0       0.250000        0.100000        0.950000
+     wdorm             0       4.000000        1.000000        6.000000
+   VNup_MB             0       0.049992        0.001000        0.050000
+  KsNH4_MB             0       0.000100        0.000100        0.100000
+  KsNO3_MB             0       0.000100        0.000100        0.100000
+      Vnit             0       0.026519        0.001000        0.100000
+    Vdenit             0       0.026147        0.001000        0.500000
+      PAR4             0       1.000000        0.000000        1.000000
